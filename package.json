@@ -1,0 +1,41 @@
+{
+  "name": "ng-library-generator",
+  "version": "0.0.1",
+  "description": "Generator for Angular2+ libraries",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 6.9.0",
+    "npm": ">= 3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreasonny83/ng-library-generator.git"
+  },
+  "keywords": [
+    "ng",
+    "ng2",
+    "angular",
+    "angular2",
+    "angular2-libraries",
+    "angular-libraries",
+    "angular2-components",
+    "angular-components",
+    "generator",
+    "typescript",
+    "rollup"
+  ],
+  "author": "Andrea Sonny <andreasonny83@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@angular/compiler": "^4.2.5",
+    "@angular/compiler-cli": "^4.2.5",
+    "@angular/core": "^4.2.5",
+    "rollup": "^0.43.0",
+    "rxjs": "^5.4.1",
+    "typescript": "^2.4.1",
+    "zone.js": "^0.8.12"
+  }
+}
