@@ -1,5 +1,5 @@
 {
-  "name": "ng-library-generator",
+  "name": "generator-ng-library",
   "version": "0.0.1",
   "description": "Generator for Angular2+ libraries",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreasonny83/ng-library-generator.git"
+    "url": "https://github.com/andreasonny83/generator-ng-library.git"
   },
   "keywords": [
     "ng",

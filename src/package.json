@@ -5,7 +5,7 @@
   "module": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreasonny83/ng-library-generator.git"
+    "url": "https://github.com/andreasonny83/generator-ng-library.git"
   },
   "keywords": [
     "ng",
