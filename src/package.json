@@ -1,12 +1,17 @@
 {
-  "name": "ng-library",
-  "description": "Generator for Angular2+ libraries",
-  "version": "0.0.1",
+  "name": "ng-library-sample",
+  "description": "Test library generated with generator-ng-library",
+  "version": "0.0.0-PLACEHOLDER",
   "module": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreasonny83/generator-ng-library.git"
+    "url": "git+https://github.com/andreasonny83/generator-ng-library.git"
   },
+  "bugs": {
+    "url": "https://github.com/andreasonny83/generator-ng-library/issues"
+  },
+  "homepage": "https://github.com/andreasonny83/generator-ng-library#readme",
+  "readmeFilename": "README.md",
   "keywords": [
     "ng",
     "ng2",
@@ -16,6 +21,9 @@
   ],
   "author": "Andrea Sonny <andreasonny83@gmail.com>",
   "license": "MIT",
+  "files": [
+
+  ],
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.0.0",
