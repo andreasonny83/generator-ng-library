@@ -30,11 +30,7 @@ PACKAGE_VERSION=$(cat ./package.json \
 echo "Deploying version: $PACKAGE_VERSION"
 
 # Update the package.json version
-sed -i "" "s/0.0.0-PLACEHOLDER/${PACKAGE_VERSION}/g" ./dist/package.json
-
-# //registry.npmjs.org/:_authToken=d4c2d445-70cd-44ea-b9bf-f6404fbac6d8
-NPM_TOKEN="d4c2d445-70cd-44ea-b9bf-f6404fbac6d8"
-# //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+sed -i "s/0.0.0-PLACEHOLDER/${PACKAGE_VERSION}/g" ./dist/package.json
 
 # Publish to NPM
 cd ./dist
