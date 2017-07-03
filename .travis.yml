@@ -6,6 +6,9 @@ notifications:
 node_js:
   - '7'
 
+before_install:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
+
 before_script:
   - npm prune
 
