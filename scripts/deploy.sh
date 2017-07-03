@@ -27,6 +27,15 @@ PACKAGE_VERSION=$(cat ./package.json \
   | sed 's/[",]//g' \
   | tr -d '[[:space:]]')
 
+# Write npmrc file for NPM publishing
+rm -Rf ./dist/.npmrc
+
+cat >> ./dist/.npmrc << EOF
+always-auth=true
+email=${NPM_EMAIL}
+_auth=${NPM_TOKEN}
+EOF
+
 echo "Deploying version: $PACKAGE_VERSION"
 
 # Update the package.json version
