@@ -1,6 +1,6 @@
 {
   "name": "generator-ng-library",
-  "version": "0.0.0-development",
+  "version": "0.0.0-PLACEHOLDER",
   "description": "Generator for Angular2+ libraries",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
