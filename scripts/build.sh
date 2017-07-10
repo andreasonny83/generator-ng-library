@@ -20,3 +20,4 @@ $ROLLUP build/ng-library.js -o dist/ng-library.js
 cp src/package.json dist/package.json
 cp src/README.md dist/README.md
 cp src/LICENSE dist/LICENSE
+cp src/.gitignore dist/.gitignore

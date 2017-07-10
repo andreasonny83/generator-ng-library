@@ -43,4 +43,5 @@ sed -i "s/0.0.0-PLACEHOLDER/${PACKAGE_VERSION}/g" ./dist/package.json
 
 # Publish to NPM
 cd ./dist
+npm install
 npm run semantic-release
