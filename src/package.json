@@ -5,13 +5,15 @@
   "module": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreasonny83/generator-ng-library.git"
+    "url": "https://github.com/andreasonny83/generator-ng-library.git"
   },
   "bugs": {
     "url": "https://github.com/andreasonny83/generator-ng-library/issues"
   },
   "homepage": "https://github.com/andreasonny83/generator-ng-library#readme",
   "readmeFilename": "README.md",
+  "author": "Andrea Sonny <andreasonny83@gmail.com>",
+  "license": "MIT",
   "keywords": [
     "ng",
     "ng2",
@@ -19,12 +21,16 @@
     "angular2",
     "angular2-components"
   ],
-  "author": "Andrea Sonny <andreasonny83@gmail.com>",
-  "license": "MIT",
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
   "files": [],
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.0.0",
     "zone.js": "^0.8.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^6.3.6"
   }
 }

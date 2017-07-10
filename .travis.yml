@@ -1,5 +1,9 @@
 language: node_js
 
+cache:
+  directories:
+    - node_modules
+
 notifications:
   email: false
 
@@ -15,6 +19,7 @@ script:
 
 after_success:
   # - npm run coveralls
+  # - npm run semantic-release
   - scripts/deploy.sh
 
 branches:

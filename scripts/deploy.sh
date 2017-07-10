@@ -18,7 +18,7 @@ cd $(dirname ${0})/..
 # git push origin master --tags
 
 # Command line arguments.
-COMMAND_ARGS=${*}
+# COMMAND_ARGS=${*}
 
 PACKAGE_VERSION=$(cat ./package.json \
   | grep version \
@@ -28,13 +28,13 @@ PACKAGE_VERSION=$(cat ./package.json \
   | tr -d '[[:space:]]')
 
 # Write npmrc file for NPM publishing
-rm -Rf ./dist/.npmrc
+# rm -Rf ./dist/.npmrc
 
-cat >> ./dist/.npmrc << EOF
-always-auth=true
-email=${NPM_EMAIL}
-_auth=${NPM_TOKEN}
-EOF
+# cat >> ./dist/.npmrc << EOF
+# always-auth=true
+# email=${NPM_EMAIL}
+# _auth=${NPM_TOKEN}
+# EOF
 
 echo "Deploying version: $PACKAGE_VERSION"
 
@@ -43,4 +43,4 @@ sed -i "s/0.0.0-PLACEHOLDER/${PACKAGE_VERSION}/g" ./dist/package.json
 
 # Publish to NPM
 cd ./dist
-npm publish
+npm run semantic-release
