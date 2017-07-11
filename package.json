@@ -1,6 +1,6 @@
 {
   "name": "generator-ng2-library",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Generator for Angular2+ libraries",
   "main": "./dist/ng-library-umd.js",
   "module": "./dist/ng-library-es5.js",
