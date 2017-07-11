@@ -19,8 +19,8 @@ script:
 
 after_success:
   # - npm run coveralls
-  # - npm run semantic-release
-  - scripts/deploy.sh
+  # - scripts/deploy.sh
+  - npm run semantic-release
 
 branches:
   except:

@@ -1,25 +1,25 @@
 {
-  "name": "generator-ng-library",
-  "version": "0.0.0-PLACEHOLDER",
+  "name": "generator-ng2-library",
+  "version": "0.0.1",
   "description": "Generator for Angular2+ libraries",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "build": "scripts/build.sh",
-    "commit": "git-cz",
-    "semantic-release-post": "semantic-release post"
-  },
+  "main": "./dist/ng-library-umd.js",
+  "module": "./dist/ng-library-es5.js",
+  "es2015": "./dist/ng-library.js",
+  "typings": "./dist/ng-library.d.ts",
+  "author": "Andrea Sonny <andreasonny83@gmail.com> (https://github.com/andreasonny83)",
+  "license": "MIT",
+  "homepage": "https://github.com/andreasonny83/generator-ng2-library#readme",
   "engines": {
     "node": ">= 6.9.0",
     "npm": ">= 3.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreasonny83/generator-ng-library.git"
+    "url": "https://github.com/andreasonny83/generator-ng2-library.git"
   },
   "bugs": {
-    "url": "https://github.com/andreasonny83/generator-ng-library/issues"
+    "url": "https://github.com/andreasonny83/generator-ng2-library/issues"
   },
-  "homepage": "https://github.com/andreasonny83/generator-ng-library#readme",
   "keywords": [
     "ng",
     "ng2",
@@ -31,22 +31,36 @@
     "angular-components",
     "generator",
     "typescript",
+    "node_modules",
     "rollup"
   ],
-  "author": "Andrea Sonny <andreasonny83@gmail.com> (https://github.com/andreasonny83)",
-  "license": "MIT",
-  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "scripts/build.sh",
+    "commit": "git-cz",
+    "release": "semantic-release pre && npm publish && semantic-release post"
+  },
   "devDependencies": {
-    "@angular/compiler": "^4.2.5",
-    "@angular/compiler-cli": "^4.2.5",
-    "@angular/core": "^4.2.5",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "rollup": "~0.43.0",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
     "rxjs": "~5.4.1",
     "semantic-release": "^6.3.6",
+    "tslint": "~4.5.0",
     "typescript": "~2.4.1",
     "zone.js": "~0.8.12"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=4.0.0"
   },
   "config": {
     "commitizen": {
