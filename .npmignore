@@ -10,6 +10,7 @@ pids
 *.pid.lock
 
 /src/
+/demo-app/
 /build/
 /coverage/
 

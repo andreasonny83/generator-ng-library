@@ -15,11 +15,13 @@ ROLLUP="node_modules/.bin/rollup"
 
 # Run Angular Compiler
 $NGC -p ./tsconfig-build.json
-$ROLLUP build/ng-library.js -o dist/ng-library.js
+$ROLLUP build/ng-library.js -f es -o dist/ng-library.js
+# $ROLLUP build/ng-library.js --config rollup-build.config.js
 
 # Generate ES5 version
 $NGC -p ./tsconfig-es5.json
-$ROLLUP build/ng-library.js -o dist/ng-library-es5.js
-$ROLLUP --config rollup.config.js
+$ROLLUP build/ng-library.js -f es -o dist/ng-library.es5.js
+# Generate UMD version
+$ROLLUP --config rollup.umd.config.js
 
 rsync -a --exclude=*.js build/ dist

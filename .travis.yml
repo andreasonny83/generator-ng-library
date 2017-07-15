@@ -8,19 +8,18 @@ notifications:
   email: false
 
 node_js:
-  - '7'
+  - '6.11.1'
 
 before_script:
   - npm prune
 
 script:
-  - scripts/build.sh
   # - scripts/test.sh
+  - scripts/build.sh
 
 after_success:
   # - npm run coveralls
-  # - scripts/deploy.sh
-  - npm run semantic-release
+  - scripts/deploy.sh
 
 branches:
   except:

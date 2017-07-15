@@ -12,6 +12,4 @@ set -e
 cd $(dirname ${0})/..
 
 # Publish to NPM
-cd ./dist
-npm install
 npm run semantic-release
